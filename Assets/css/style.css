@@ -1,0 +1,17 @@
+body {
+    background-image: url(../images/baboon_background.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#add-gif {
+    margin: 10px;
+}
+
+#gif-form {
+
+}
