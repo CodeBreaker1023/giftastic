@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/baboon_background.jpg);
+    background-image: url(../images/baboon_background2.jpg);
     background-position: center;
     background-size: 100%;
     background-position-y: 0px;
@@ -12,6 +12,21 @@ body {
     margin: 10px;
 }
 
-#gif-form {
+button, 
+div,
+form,
+input {
+    margin: 10px;
+    }
 
+#favGifs {
+    float: right;
+}
+
+h2 {
+    background: white;
+    opacity: .7;
+    color: black;
+    padding: 10px;
+    font-size:18px;
 }

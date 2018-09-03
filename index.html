@@ -20,26 +20,34 @@
 <body>
 
     <div class="container">
-        <h1>Animal gifs Gone Wild</h1>
-    
-        <!-- Div contains all buttons and newly added buttons -->
-        <div id="buttons-view"></div>
-        
+        <div class="wrapper">
+            <h1>Animal gifs Gone Wild</h1>
+            <h2>Click the buttons below to see gifs of that particular animal. 
+                Click on the image to animate the gif. Click the image again to stop 
+                it. If you want to see gifs of a particular animal, type it in 
+                the text bar and hit the "Create Animal gif" button. A new button
+                should appear. Select this button to see gifs of your animal. Enjoy!
+            </h2>
+            <!-- Div contains all buttons and newly added buttons -->
+            <div id="buttons-view"></div>
+            
 
-        <form id="gif-form">
-        <label for="gif-input">Create Animal gif</label>
-        <input type="text" id="gif-input"><br>
-    
-        <!-- Button triggers new gif to be added -->
-        <input id="add-gif" type="submit" value="Add a gif">
-        </form>
-    
-        <!-- gifs will get dumped Here -->
-        <div id="gifs-appear-here">
+            <form id="gif-form">
+            <label for="gif-input">Create Animal gif</label>
+            <input type="text" id="gif-input"><br>
+        
+            <!-- Button triggers new gif to be added -->
+            <input id="add-gif" type="submit" value="Add a gif">
+            </form>
+        
+            <!-- gifs will get dumped Here -->
+            <div id="gifs-appear-here">
+            </div>
+
+            <!-- saved favorite gifs -->
+            <div id="favGifs"></div>
         </div>
 
-        <!-- saved favorite gifs -->
-        
 
         <!-- Linking JS, Popper.js, and jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
