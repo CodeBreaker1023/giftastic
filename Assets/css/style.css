@@ -1,11 +1,12 @@
 body {
-    background-image: url(../images/baboon_background2.jpg);
+    /* background-image: url(../images/baboon_background2.jpg); */
     background-position: center;
     background-size: 100%;
     background-position-y: 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    background-color: lightcoral;
 }
 
 #add-gif {
@@ -19,6 +20,8 @@ input {
     margin: 10px;
     }
 
+form
+
 #favGifs {
     float: right;
 }
@@ -31,7 +34,23 @@ h2 {
     font-size:18px;
 }
 
-@media only screen and (max-width: 700px) {
+.fa {
+    font-size: 3em;
+    cursor: pointer;
+    user-select: none;
+    color: red;
+}
+/* 
+.fa:hover {
+    color: blue;
+} */
+
+
+.fa:click {
+    color: blue;
+}
+
+/* @media only screen and (max-width: 700px) {
 body {
     background:  url("https://images2.alphacoders.com/808/808417.jpg");
     background-size: cover;
@@ -40,5 +59,6 @@ body {
     position:fixed;
     opacity: 1;
     z-index: -1;
+    overflow: auto;
 }
-}
+} */

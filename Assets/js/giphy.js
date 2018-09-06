@@ -1,5 +1,5 @@
  // Initial array of topic
- var gifs = ["dogs", "cats", "squirrels", "pigs"];
+ var gifs = ["horses", "hippos", "squirrels", "monkeys"];
 
  // displayGif function re-renders the HTML to display the appropriate content
  function displayGif() {
@@ -17,7 +17,7 @@
     for ( var i = 0; i < 10; i++) 
     {
             // Delete gifs before they are replaced by new ones
-            $("gifs-appear-here").empty();
+            // $("gifs-appear-here").empty();
 
             // Creating animal div tag to store divs
             var animalDiv = $("<div>");
@@ -36,10 +36,12 @@
             animalImage.attr("data-still", response.data[i].images.fixed_width_still.url);
             animalImage.attr("data-animate", response.data[i].images.fixed_width_downsampled.url);
             animalImage.attr("data-state", "still");
+            var span = $("<br/> <span class='icon-size'><i class='fa fa-thumbs-up'></i></span>");
 
             // Append the <p> (var p) and <img> (animalImage) to the animalDiv
             animalDiv.append(p);
             animalDiv.append(animalImage);
+            animalDiv.append(span);
 
             // prepend animalDiv to DOM
             $("#gifs-appear-here").prepend(animalDiv);
@@ -57,7 +59,7 @@
     if (state === "still") {
       $(this).attr("src", $(this).attr("data-animate"));
       $(this).attr("data-state", "animate");
-    } else {// else, still
+    } else {// else, animate --> still
       $(this).attr("src", $(this).attr("data-still"));
       $(this).attr("data-state", "still");
     }   
@@ -103,3 +105,9 @@
 
  // Calling the renderButtons function to display the intial buttons
  renderButtons();
+
+ $(document).on("click",".fa", function(){
+     console.log("Inside fa like");
+    $(this).css("color","blue");
+
+ });
